@@ -1,0 +1,492 @@
+.nav {
+    height: 114px;
+    background-color: #f5f5f5;
+    border-bottom: #f5f5f5;
+    overflow: hidden;
+}
+
+.menu-list {
+    height: 45px;
+}
+
+.main-link a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    margin: 0 15px;
+    line-height: 45px;
+    padding: 4px 10px;
+}
+
+.menu-all a {
+    margin-left: 20px;
+}
+
+/* 需要让li浮动!!! */
+.menu li {
+    float: left;
+}
+
+.menu-all a,
+.menu ul li a {
+    font-family: 'iconfont';
+    line-height: 45px;
+    font-size: 14px;
+    padding: 4px 15px;
+    margin-right: 20px;
+}
+
+.main-link a:hover,
+.menu-all a:hover,
+.menu ul li a:hover {
+    background-color: #000;
+    border-radius: 20px;
+    color: #fff;
+}
+
+
+.btn_shop {
+    float: left;
+    /* text,btn同时添加浮动，取消中间缝隙 */
+    width: 82px;
+    height: 35.33px;
+    background-color: #929292;
+    border: 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.de_container {
+    margin-top: 10px;
+}
+
+.crumb_wrap {
+    height: 30px;
+}
+
+.crumb_wrap a {
+    margin: 0 5px;
+}
+
+.preview_wrap {
+    height: 590px;
+    width: 400px;
+}
+
+.preview_img {
+    height: 398px;
+    border: 1px solid #ccc;
+}
+
+.preview_list {
+    position: relative;
+    height: 60px;
+    margin-top: 60px;
+}
+
+.list_item {
+    width: 320px;
+    height: 60px;
+    /* 让块状元素居中对齐 */
+    margin: 0 auto;
+}
+
+.list_item li {
+    float: left;
+    width: 56px;
+    height: 56px;
+    border: 2px solid transparent;
+    margin: 0 2px
+}
+
+.list_item li.current {
+    border: 2px solid #c81623;
+}
+
+.arrow_prev,
+.arrow_next {
+    position: absolute;
+    top: 15px;
+    width: 22px;
+    height: 32px;
+}
+
+.arrow_next {
+    right: 0;
+}
+
+.arrow_prev {
+    left: 0;
+}
+
+.itemInfo_wrap {
+    width: 718px;
+}
+
+.sku_name {
+    height: 30px;
+    /* 把height设高一点，文字自动贴上部对齐，不用设置下面的margin,就能跟下面有一段距离 */
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.summary_price,
+.summary_promotion {
+    position: relative;
+    background-color: #f5f5f5;
+    padding: 10px 5px;
+}
+
+.summary dl {
+    overflow: hidden;
+}
+
+.summary dt,
+.summary dd {
+    float: left;
+    /* 需要清除浮动以避免父类高度塌陷 */
+}
+
+.summary dt {
+    width: 60px;
+    padding-left: 10px;
+    /* 让行高等于高（除去padding值的高度） 可到页面中检查查看*/
+    line-height: 28px;
+}
+
+.price {
+    font-size: 22px;
+    color: #e12228;
+}
+
+.summary_price a {
+    color: #c81623;
+}
+
+.remark {
+    /* 不能用float: right 因为summary_price盒子没有给宽度，此时宽度就是内容的宽度，所以不会让它浮到右边去 */
+    /* float: right; */
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.summary_promotion {
+    padding-top: 0;
+}
+
+.summary_promotion dd {
+    width: 440px;
+    line-height: 28px;
+    color: #e12228;
+}
+
+.summary_promotion a {
+    color: #767676;
+}
+
+.summary_promotion a:hover {
+    color: #c81623;
+}
+
+.summary_promotion em {
+    /* 让块状元素内文字与行内文字对齐 */
+    display: inline-block;
+    text-align: center;
+    line-height: 24px;
+
+    height: 24px;
+    background-color: transparent;
+    border: 1px solid #e12228;
+    padding: 0 3px;
+}
+
+.shop_support {
+    color: #646fb0;
+}
+
+.shop_name {
+    color: #c81623;
+}
+
+.summary_delivery {
+    padding: 5px 5px;
+}
+
+.summary_delivery dd {
+    line-height: 28px;
+}
+
+.choose_size,
+.choose_color,
+.choose_type {
+    padding: 0 5px;
+}
+
+.choose_color a {
+    display: inline-block;
+    width: 80px;
+    height: 28px;
+    /* padding: 3px 0; */
+    background-color: #f7f7f7;
+    border: 1px solid #ededed;
+    text-align: center;
+    line-height: 28px;
+    margin: 0 5px;
+}
+
+.choose_color a.current {
+    border: 1px solid #c81623;
+}
+
+.choose_size {
+    margin: 10px 0;
+}
+
+.choose_size a,
+.choose_type a {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 12px;
+    margin: 0 5px;
+    background-color: #f7f7f7;
+    border: 1px solid #ededed;
+    text-align: center;
+}
+
+.choose_size a.current {
+    border: 1px solid #c81623;
+}
+
+.choose_btns {
+    margin-left: 15px;
+    margin-top: 25px;
+}
+
+.choose_amount {
+    position: relative;
+    float: left;
+    height: 46px;
+    width: 50px;
+}
+
+.choose_amount input {
+    width: 33px;
+    height: 44px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.add,
+.reduce {
+    position: absolute;
+    width: 15px;
+    height: 22px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 22px;
+}
+
+.add {
+    top: 0;
+    right: 0;
+}
+
+.reduce {
+    bottom: 0;
+    right: 0;
+    cursor: not-allowed;
+}
+
+.addcar {
+    float: left;
+    height: 46px;
+    width: 142px;
+    background-color: #c81623;
+    line-height: 46px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.product_detail {
+    margin-bottom: 15px;
+}
+
+.aside {
+    width: 208px;
+    /* border: 1px solid #ccc; */
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #666;
+    padding: 10px;
+    background-color: #f7f7f7;
+}
+
+.shop_intro {
+    height: 196px;
+    border: 1px solid #ddd;
+    /* padding: 10px; */
+}
+
+.score a {
+    display: block;
+    padding: 10px 10px 0 10px;
+}
+
+.score-part {
+    height: 18px;
+    width: 88px;
+    margin-bottom: 10px;
+}
+
+.score-desc {
+    display: inline-block;
+    color: #929292;
+}
+
+.score-detail {
+    display: inline-block;
+    color: #c81623;
+}
+
+.shop-btns {
+    border-top: 1px solid #ddd;
+    height: 55px;
+    padding: 10px 10px;
+}
+
+.shop-btns a {
+    display: inline-block;
+    height: 35px;
+    width: 88px;
+    margin-right: 2px;
+    border: 1px solid #ddd;
+    color: #666;
+    background-color: #f8f8f8;
+    text-align: center;
+    line-height: 35px;
+}
+
+.shop_search {
+    margin-top: 15px;
+    height: 134px;
+    border: 1px solid #ddd;
+}
+
+.search-word {
+    margin: 5px 0 4px 20px;
+}
+
+.search-word input {
+    border: 1px solid #ddd;
+    height: 20px;
+    width: 108px;
+}
+
+.search-price {
+    margin: 0 0 5px 20px;
+}
+
+.search-price input {
+    border: 1px solid #ddd;
+    height: 20px;
+    width: 45px;
+    margin: 0 2px;
+}
+
+.shop_search button {
+    width: 46px;
+    height: 24px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 75px;
+}
+
+.tab_list {
+    height: 34px;
+    margin-top: 10px;
+    background-color: #f7f7f7;
+    color: #666;
+    border-bottom: 1px solid #e4393c;
+}
+
+.tab_list .current {
+    background-color: #e4393c;
+    color: #fff
+}
+
+.tab_list li {
+    float: left;
+    height: 34px;
+    width: 100px;
+    line-height: 34px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tab_con {
+    border: 1px solid #f7f7f7;
+    margin-bottom: 10px;
+}
+
+.tab_con li a {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #e12228;
+    height: 180px;
+    display: block;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* 在一行里显示所有文字，超出部分用省略号
+    .tab_con li h5 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+
+.detail {
+    width: 978px;
+}
+
+
+.detail_tab_list {
+    height: 39px;
+    border-bottom: 1px solid #e12228;
+    background-color: #f7f7f7;
+}
+
+.detail_tab_list li {
+    font-size: 14px;
+    float: left;
+    height: 39px;
+    line-height: 39px;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+.detail_tab_list li.current {
+    background-color: #e12228;
+    color: #fff;
+}
+
+.detail_tab_con {
+    padding: 20px 20px;
+}
+
+.item li {
+    float: left;
+    height: 18px;
+    width: 180px;
+    padding-left: 42px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,294 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin-top: 10px;
+    margin-left: 219px;
+}
+
+.focus {
+    position: relative;
+    float: left;
+    width: 720px;
+    height: 455px;
+}
+
+.arrow-l,
+.arrow-r {
+    position: absolute;
+    /* 定位：子绝父相 */
+    top: 50%;
+    margin-top: -20px;
+    /* 居中方法：top: 50% 再向上走字体高度一半 */
+    width: 24px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, .2);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-family: 'iconfont';
+    font-size: 18px;
+}
+
+.arrow-r {
+    right: 0;
+}
+
+.circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
+.circle li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    margin: 0 3px;
+    border-radius: 50%;
+    /* 经过鼠标变小手 */
+    cursor: pointer;
+}
+
+.current {
+    background-color: #fff;
+}
+
+.newsflash {
+    float: right;
+    height: 455px;
+    width: 250px;
+}
+
+.news {
+    height: 163px;
+    border: 1px solid #dbdbdb
+}
+
+.news-hd {
+    height: 32px;
+    border-bottom: 1px dotted #dbdbdb;
+    font-size: 14px;
+    line-height: 32px;
+    padding: 0 15px;
+}
+
+.news-hd a {
+    float: right;
+    font-family: 'iconfont';
+    font-size: 12px;
+}
+
+.news-bd {
+    padding: 10px 0 0 15px;
+}
+
+.news-bd li {
+    height: 23px;
+}
+
+.lifeservice {
+    overflow: hidden;
+    height: 208px;
+    border: 1px solid #dbdbdb;
+    border-top: 0;
+}
+
+.lifeservice ul {
+    width: 252px;
+    /* 因为多了一个右边框，所以宽度超出规定，为了让一排装下4个，所以增大父级边框，再通过overflow hidden隐藏超出部分 */
+}
+
+.lifeservice li {
+    float: left;
+    width: 62px;
+    height: 70px;
+    border-right: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.lifeservice li a {
+    display: block;
+    overflow: hidden;
+    /* 解决i引起的外边距塌陷合并的问题 */
+    height: 100%;
+}
+
+.lifeservice li a i {
+    font-family: 'iconfont';
+    font-size: 22px;
+    color: rgb(188, 54, 54);
+}
+
+.lifeservice li p {
+    text-align: center;
+}
+
+.service_ico {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 10px auto;
+}
+
+.bargain {
+    height: 75px;
+    margin-top: 5px;
+}
+
+.recommend {
+    height: 163px;
+    margin-top: 10px;
+}
+
+.recom-hd {
+    width: 200px;
+    height: 163px;
+    background-color: #5c5251;
+    text-align: center;
+
+}
+
+.recom-hd i {
+    font-family: 'iconfont';
+    font-size: 80px;
+    color: #fff;
+    margin: 30px 0 5px 0;
+}
+
+.recom-hd h3 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.recom-bd {
+    height: 163px;
+    width: 1000px;
+    background-color: #ebebeb;
+}
+
+.recom-bd li {
+    float: left;
+    width: 249px;
+    /* height: 145px; */
+    border-right: 1px solid #ccc;
+    /* margin-top: 10px; */
+}
+
+.recom-bd li a {
+    display: block;
+    height: 100%;
+}
+
+.recom-bd .last {
+    border-right: 0;
+}
+
+.box-hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+    margin-top: 25px;
+}
+
+.box-hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+}
+
+.tab-list {
+    float: right;
+    line-height: 30px;
+}
+
+.tab-list li {
+    float: left;
+}
+
+.tab-list li a {
+    margin: 0 15px;
+}
+
+.box-bd {
+    height: 361px;
+}
+
+.box-bd li {
+    overflow: hidden;
+}
+
+.box-bd img {
+    transition: all 0.2s;
+}
+
+.box-bd img:hover {
+    margin-left: 8px;
+}
+
+.w209 {
+    width: 209px;
+    background-color: #f9f9f9;
+}
+
+.w329 {
+    width: 329px;
+}
+
+.w219 {
+    width: 219px;
+    border-right: 1px solid #ccc;
+}
+
+.w220 {
+    width: 220px;
+    border-right: 1px solid #ccc;
+}
+
+.tab-con li {
+    float: left;
+    height: 361px;
+}
+
+.tab-con-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-con-list {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.tab-con-list li {
+    width: 86px;
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid #ccc;
+    margin-left: 12px;
+    text-align: center;
+}
+
+.fixedtool {
+    position: fixed;
+    top: 100px;
+    /* 先走页面的一半 */
+    left: 50%;
+    /* 再往回走版心的一半600px + 本身宽度66px + 缝隙10px*/
+    margin-left: -676px;
+    width: 66px;
+    background-color: #fff;
+}
+
+.fixedtool li {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.fixedtool .current {
+    background-color: #c81623;
+    color: #fff;
+}
